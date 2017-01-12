@@ -1,16 +1,18 @@
 <?php
-
-$url = $_SERVER['REQUEST_URI'];
 require __DIR__ . '/autoload.php';
+require __DIR__.'/app/Config.php';
+$url = $_SERVER['REQUEST_URI'];
+$parsUrl = explode('/', $url);
 $controller = new app\controllers\News();
-var_dump($url);
 /* @var $action string */
 if (isset($_GET['action'])) {
   $action = $_GET['action'] ?: 'Index';
 } else {
   $action = 'Index';
 }
+
 $controller->action($action);
+phpinfo();
 /*$config = app\config::instance();
 $config->data['db'] ='localhost'; 
 

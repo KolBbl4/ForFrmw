@@ -19,12 +19,12 @@ class Db {
 
     try {
       $this->dbConnect = new \PDO('mysql:host=127.0.0.1;dbname=vk', 'root', '');
+      $this->dbConnect->exec('SET NAMES utf8');//кодировка!!!!!!!
+
     } catch (\PDOException $e) {
       echo $e->getMessage();
       die;
     }
-
-    $this->dbConnect = new \PDO('mysql:host=127.0.0.1;dbname=vk', 'root', '');
   }
 
   public function execute($sql, $params = []) {

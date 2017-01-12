@@ -19,7 +19,6 @@
     </head>
     <body>
         <h1>Новости: </h1>
-
         <div class="panel panel-default">
             <div class="panel-heading"><?php echo $article->title; ?></div>
             <div class="panel-body">
