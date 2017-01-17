@@ -8,6 +8,9 @@ function autoload($class) {
   if (file_exists($fileName)) {
     require $fileName;
   }
+  else{
+    die('Ошибка в названии');
+  }
 }
 
 spl_autoload_register('autoload');

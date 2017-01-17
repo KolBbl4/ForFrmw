@@ -1,9 +1,9 @@
 <?php
-require __DIR__ . '/autoload.php';
-require __DIR__.'/app/Config.php';
-$url = $_SERVER['REQUEST_URI'];
-$parsUrl = explode('/', $url);
+require __DIR__.'/app/Bootstap.php';
+require __DIR__. '/Autoload.php';
 $controller = new app\controllers\News();
+
+new app\Routs($_SERVER['REQUEST_URI']);
 /* @var $action string */
 if (isset($_GET['action'])) {
   $action = $_GET['action'] ?: 'Index';
@@ -12,7 +12,9 @@ if (isset($_GET['action'])) {
 }
 
 $controller->action($action);
-phpinfo();
+
+
+//phpinfo();
 /*$config = app\config::instance();
 $config->data['db'] ='localhost'; 
 

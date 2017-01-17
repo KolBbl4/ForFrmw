@@ -4,7 +4,7 @@
  * Класс для работы с БД
  */
 
-namespace app;
+namespace app\core;
 
 class Db {
 

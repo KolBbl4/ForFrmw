@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace app\core;
 
 /**
  * Класс вида для :
@@ -8,7 +8,7 @@ namespace app;
  * подключения самого шаблона через контроллер
  * 
  */
-class View implements \Countable {
+class View  {
 
   protected $data = [];
 
@@ -65,8 +65,6 @@ class View implements \Countable {
     return $content;
   }
 
-  public function count() {
-    return count($this->data);
-  }
+
 
 }

@@ -6,8 +6,9 @@
 
 namespace app\controllers;
 
-class News extends \app\Controller {
+class News extends \app\core\Controller {
 
+  
   protected function beforeAction() {
     
   }

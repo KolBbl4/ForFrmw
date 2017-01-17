@@ -1,6 +1,6 @@
 <?php
 
-namespace app;
+namespace app\core;
 
 /**
  * Трейд для определения классов как сингл тон

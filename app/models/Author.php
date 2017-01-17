@@ -6,7 +6,7 @@
 
 namespace app\Models;
 
-class Author extends \app\Model {
+class Author extends \app\core\Model {
 
   const TABLE = 'authors';
 

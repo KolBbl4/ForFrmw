@@ -6,7 +6,7 @@
 
 namespace app\models;
 
-use app\Model as Model;
+use app\core\Model as Model;
 
 class User extends Model {
 

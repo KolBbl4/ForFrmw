@@ -6,7 +6,7 @@
 
 namespace app\models;
 
-class news extends \app\model {
+class News extends \app\core\model {
 
   const TABLE = 'news';
 

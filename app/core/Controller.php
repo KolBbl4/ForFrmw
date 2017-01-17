@@ -1,13 +1,13 @@
 <?php
 
-namespace app;
+namespace app\core;
 
 abstract class Controller {
 
   protected $view;
 
   public function __construct() {
-    $this->view = new \app\view();
+    $this->view = new \app\core\View();
   }
 
   /**
