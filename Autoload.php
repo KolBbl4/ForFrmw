@@ -9,6 +9,7 @@ function autoload($class) {
     require $fileName;
   }
   else{
+    echo $fileName;
     die('Ошибка в названии');
   }
 }
